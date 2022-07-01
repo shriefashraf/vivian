@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vivian">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00020797574267678 0.00890569859069312 0.196160430350574"
+        rpy="0 0 0" />
+      <mass
+        value="3.76298696889604" />
+      <inertia
+        ixx="0.0280830370994033"
+        ixy="-5.75675443876112E-07"
+        ixz="8.87523578528603E-15"
+        iyy="0.0951656950746911"
+        iyz="4.17967979821291E-15"
+        izz="0.120441860627523" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel1_link">
+    <inertial>
+      <origin
+        xyz="1.0740693092183E-06 0.0366766419625257 4.93363949296832E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.84168451307667" />
+      <inertia
+        ixx="0.00267379895876345"
+        ixy="-9.9861693510714E-09"
+        ixz="-7.26163679794127E-07"
+        iyy="0.00491552945012201"
+        iyz="-3.68650105499031E-07"
+        izz="0.0026738657699045" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.25849 0.21058 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel1_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel2_link">
+    <inertial>
+      <origin
+        xyz="-2.47993246101919E-05 0.0366766376328076 -4.26843695955081E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.841685012538157" />
+      <inertia
+        ixx="0.00267320109212665"
+        ixy="1.86873718264556E-07"
+        ixz="-3.58308916703817E-07"
+        iyy="0.0049155311982986"
+        iyz="3.17671781663541E-07"
+        izz="0.00267446614978123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel2_joint"
+    type="continuous">
+    <origin
+      xyz="0.26151 0.21058 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel3_link">
+    <inertial>
+      <origin
+        xyz="4.91244510482103E-05 -0.0318612208267981 -4.83665943012968E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.841685079753608" />
+      <inertia
+        ixx="0.00267369402191975"
+        ixy="3.66902300694354E-07"
+        ixz="-7.13392206354437E-07"
+        iyy="0.00491553155837189"
+        iyz="-3.41184041888118E-08"
+        izz="0.00267397366129848" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel3_joint"
+    type="continuous">
+    <origin
+      xyz="0.26151 -0.19758 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel3_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel4_link">
+    <inertial>
+      <origin
+        xyz="-3.45462219692796E-05 -0.0318612272621854 -3.52415855837396E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.841684619875614" />
+      <inertia
+        ixx="0.0026745591528447"
+        ixy="-2.56880487974466E-07"
+        ixz="1.64787569202384E-08"
+        iyy="0.00491552918980925"
+        iyz="-2.64902800946241E-07"
+        izz="0.00267310559658734" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/wheel4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel4_joint"
+    type="continuous">
+    <origin
+      xyz="-0.25849 -0.19758 0.038"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00056533667281522 -1.49386605500235E-05 0.00999855896082988"
+        rpy="0 0 0" />
+      <mass
+        value="0.165382987233022" />
+      <inertia
+        ixx="6.24981181936886E-05"
+        ixy="5.15364359719187E-08"
+        ixz="4.32898320334088E-07"
+        iyy="5.86292782522695E-05"
+        iyz="3.03681463223063E-09"
+        izz="0.000109758602368397" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 0.4" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.00025497 0.0075865 0.2993"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.0174991392917964 1.90299223493673E-05 -0.0196514267473166"
+        rpy="0 0 0" />
+      <mass
+        value="0.263364066692171" />
+      <inertia
+        ixx="0.000641425290148305"
+        ixy="6.13866062972726E-08"
+        ixz="-1.75109098481388E-05"
+        iyy="0.000258112151124677"
+        iyz="1.50219848614623E-07"
+        izz="0.000411602430857676" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vivian/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.35589 0.0039224 0.12734"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+<!--joint for base_footprint for to move with referense to odom basefootprint should be the projection of base_link-->
+<link
+    name="base_footprint">
+  </link>
+  <joint
+    name="base_link_base_footprint"
+    type="fixed">
+    <origin
+      xyz="0.00020797574267678 0.00890569859069312 0.065"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+  </joint>
+
+<!--gzeboo reference-->
+ <gazebo reference="base_link">
+    <material>Gazebo/Orange</material>
+    <dampingFactor>0.01</dampingFactor>
+    <turnGravityOff>0</turnGravityOff>
+  </gazebo>
+ <gazebo reference="wheel1_link">
+    <material>Gazebo/Black</material>
+    <dampingFactor>0.01</dampingFactor>
+    <turnGravityOff>0</turnGravityOff> 
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <mu1 value="200.0"/>
+    <mu2 value="100.0"/>
+    <fdir1>0 1 0</fdir1>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+ <gazebo reference="wheel2_link">
+    <material>Gazebo/Black</material>
+    <dampingFactor>0.01</dampingFactor>
+    <turnGravityOff>0</turnGravityOff>
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <mu1 value="200.0"/>
+    <mu2 value="100.0"/>
+    <fdir1>0 1 0</fdir1>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+ <gazebo reference="wheel3_link">
+    <material>Gazebo/Black</material>
+    <dampingFactor>0.01</dampingFactor>
+    <turnGravityOff>0</turnGravityOff>
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <mu1 value="200.0"/>
+    <mu2 value="100.0"/>
+    <fdir1>0 1 0</fdir1>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+ <gazebo reference="wheel4_link">
+    <material>Gazebo/Black</material>
+    <dampingFactor>0.01</dampingFactor>
+    <turnGravityOff>0</turnGravityOff>
+    <kp>1e6</kp>
+    <kd>100</kd>
+    <mu1 value="200.0"/>
+    <mu2 value="100.0"/>
+    <fdir1>0 1 0</fdir1>
+    <minDepth>0.003</minDepth>
+  </gazebo>
+ <gazebo reference="camera_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+ <gazebo reference="lidar_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+ 
+<!--skid steer plugin to drive robot -->
+<gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>wheel2_joint</leftFrontJoint>
+    <rightFrontJoint>wheel3_joint</rightFrontJoint>
+    <leftRearJoint>wheel1_joint</leftRearJoint>
+    <rightRearJoint>wheel4_joint</rightRearJoint>
+    <wheelSeparation>0.4</wheelSeparation>
+    <wheelDiameter>0.215</wheelDiameter>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
+    <torque>40</torque>
+    <topicName>cmd_vel</topicName>
+    <broadcastTF>true</broadcastTF>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <odometrySource>1</odometrySource>
+    <publishWheelTF>false</publishWheelTF>
+    <publishOdom>true</publishOdom>
+    <publishWheelJointState>false</publishWheelJointState>
+  </plugin>
+</gazebo>
+<!--gazebo plugin for jointstates-->
+<gazebo>
+        <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+            <jointName>wheel1_joint,wheel2_joint,wheel3_joint,wheel4_joint</jointName>
+        </plugin>
+    </gazebo>
+<!--gazebo plugin for camera-->
+ <gazebo reference="camera_link">
+    <sensor type="camera" name="camera1">
+      <update_rate>50.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>camera</cameraName>
+        <imageTopicName>rgb/image_raw</imageTopicName>
+        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+        <frameName>camera</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+<!-- plugin for lidar  -->
+  <gazebo reference="lidar_link">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>50</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise parameters based on published spec for Hokuyo laser
+               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
+               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
+               reading. -->
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>lidar_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

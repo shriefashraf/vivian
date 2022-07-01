@@ -1,0 +1,27 @@
+<launch>
+
+<arg name="model" default="$(find vivian)/urdf/vivian.urdf"/>
+<arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz"/>
+
+
+<!-- Launch gazebo -->
+<include file="$(find vivian)/launch/gazebo.launch">
+  <arg name="model" value="$(arg model)"/>
+ </include>
+
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+
+<!-- Load joint controller configuration from YAML file to parameter server -->
+
+<rosparam file="$(find vivian)/config/joint_vivian_2.yaml" command="load"/>
+
+<!-- load the controllers -->
+<node name="vivian_node" pkg="controller_manager" type="spawner"
+  respawn="true" output="screen" ns="vivian" args="mobile_base_controller"/>
+
+<!-- convert joint states to TF transforms for rviz, etc -->
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+</node>
+</launch>
+
